@@ -1,0 +1,48 @@
+.btn-text {
+    border: 3px solid;
+    border-radius: 3px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right,$color-primary, $color-primary-light);
+    text-decoration: none;
+    
+    
+
+    &--white__basic {
+      border: none;
+      &:hover,
+      &:visited {
+        transform: all .3s;
+        transform: translateX(.3rem);
+      }
+    }
+
+
+    &,
+    &:link,
+    &:active {
+        
+        font-size: 2.2rem;
+        font-weight: 600;
+        padding: 1rem 3rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-primary 40%, $color-primary-dark 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+        
+    
+
+    &:hover,
+    &:visited {
+      background-image: linear-gradient(to right, $color-primary, $color-primary-light);
+      
+
+     
+    }
+
+
+    
+
+ 
+}
+

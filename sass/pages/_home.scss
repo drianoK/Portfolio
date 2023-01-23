@@ -1,0 +1,27 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 40rem 0;
+    margin-top: -23vh;
+}
+
+.section-projects {
+    background-image: linear-gradient(to right , rgba($color-grey-dark-3, .75), rgba($color-grey-dark-3, .75)), url(../img/5184157.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-top: -10rem;
+    transform: skewY(-9deg);
+    padding: 20rem 0;
+
+  
+
+        & > * {
+            transform: skewY(9deg);
+        }
+}
+
+
+.section-contact {
+    padding: 30rem 0;
+    
+}
