@@ -23,9 +23,10 @@
 */
 
 
-@mixin respond-phone {
+// @mixin respond-phone {    --> example !
     @media (max-width: 600px) {@content};
 }
+
 
 
 /* 
