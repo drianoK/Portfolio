@@ -198,9 +198,9 @@ body {
   animation-fill-mode: backwards; }
 
 .project__text {
-  font-size: 2rem;
   font-family: inherit;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   color: #fff;
   margin-bottom: 2rem; }
 
