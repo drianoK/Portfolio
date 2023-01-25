@@ -15,7 +15,7 @@
 
 0-600px:    Phone
 600-900px:  Tablet portrait mode
-900-1600px: Tablet landscape mode
+900-1200px: Tablet landscape mode
 [1200-1600px]: Desktop - is where our nomral styles apply!
 
 
@@ -50,3 +50,5 @@
     @if $breakpoint == big-desktop {
         @media (min-width: $bp-largest) {@content};
     }
+
+}
