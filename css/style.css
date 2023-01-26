@@ -232,12 +232,19 @@ body {
   width: 60%;
   box-shadow: 0 1rem 3rem rgba(17, 17, 17, 0.4);
   margin-left: 10rem; }
+  @media (max-width: 75em) {
+    .wrapper__photo {
+      width: 70%; } }
 
 .wrapper__text {
   font-family: inherit;
   font-size: 2rem;
   line-height: 2.5rem;
   margin-bottom: 2rem; }
+  @media (max-width: 75em) {
+    .wrapper__text {
+      font-size: 1.6rem;
+      line-height: 2rem; } }
 
 .wrapper__contact {
   margin-top: 5rem; }
@@ -358,7 +365,7 @@ body {
   margin-top: -23vh; }
   @media (max-width: 75em) {
     .section-about {
-      padding: 30rem 0; } }
+      padding: 25rem 0; } }
 
 .section-projects {
   background-image: linear-gradient(to right, rgba(51, 51, 51, 0.75), rgba(51, 51, 51, 0.75)), url(../img/5184157.jpg);

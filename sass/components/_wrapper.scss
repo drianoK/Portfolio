@@ -5,6 +5,11 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .4);
         margin-left: 10rem;
         
+
+        @include respond(tab-land) {    // MEDIA QUERY
+            width: 70%;
+            
+    }
     }
 
     &__text {
@@ -12,7 +17,12 @@
     font-size: 2rem;
     line-height: 2.5rem;
     margin-bottom: 2rem;
-    
+
+    @include respond(tab-land) {    // MEDIA QUERY
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
 }
 
 }
