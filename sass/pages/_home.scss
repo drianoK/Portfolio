@@ -2,6 +2,13 @@
     background-color: $color-grey-light-1;
     padding: 40rem 0;
     margin-top: -23vh;
+
+    @include respond(tab-land) {    // MEDIA QUERY
+        padding: 30rem 0;
+
+}
+
+
 }
 
 .section-projects {
@@ -16,19 +23,16 @@
   
     @include respond(tab-land) {    // MEDIA QUERY
                 transform: skewY(-13deg);
-
-            
-    }
+            }
 
 
-        & > * {
+     & > * {
             transform: skewY(9deg);
 
-
-            @include respond(tab-land) {    // MEDIA QUERY
+        @include respond(tab-land) {    // MEDIA QUERY
                 transform: skewY(13deg);
             }
-        }
+    }
 }
 
 
@@ -37,6 +41,6 @@
     
 
     @include respond(tab-land) {   // MEDIA QUERY
-        padding: 25rem 0;
+        padding: 20rem 0;
     }
 }
