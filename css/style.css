@@ -249,7 +249,7 @@ body {
   margin: 0 auto; }
   @media (max-width: 75em) {
     .row {
-      max-width: 98rem; } }
+      max-width: 95rem; } }
   .row:not(:last-child) {
     margin-bottom: 12rem; }
   .row::after {
