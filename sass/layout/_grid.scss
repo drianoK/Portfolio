@@ -1,6 +1,12 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
+
+    @include respond(tab-land) {     // MEDIA QUERY
+        max-width: 100rem
+    }
+
+
     
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -21,4 +27,7 @@
        width: calc((100% - #{10rem}) / 2);
     
     }
+
+
+
 }

@@ -14,9 +14,19 @@
     padding: 20rem 0;
 
   
+    @include respond(tab-land) {    // MEDIA QUERY
+                transform: skewY(-15deg);
+            
+    }
+
 
         & > * {
             transform: skewY(9deg);
+
+
+            @include respond(tab-land) {    // MEDIA QUERY
+                transform: skewY(15deg);
+            }
         }
 }
 
@@ -24,4 +34,8 @@
 .section-contact {
     padding: 30rem 0;
     
+
+    @include respond(tab-land) {   // MEDIA QUERY
+        padding: 25rem 0;
+    }
 }
