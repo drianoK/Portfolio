@@ -1,3 +1,5 @@
+
+
 .btn-text {
     border: 3px solid;
     border-radius: 3px;
@@ -5,13 +7,22 @@
     border-image-source: linear-gradient(to right,$color-primary, $color-primary-light);
     text-decoration: none;
     
+
+      @include respond(tab-land) { // MEDIA QUERY
+      border: 2px solid;
+      border-radius: 3px;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to right,$color-primary, $color-primary-light);
+      text-decoration: none;
+
+    }
     
 
     &--white__basic {
       border: none;
       &:hover,
       &:visited {
-        transform: all .3s;
+        transition: all .3s;
         transform: translateX(.3rem);
       }
     }
@@ -28,21 +39,17 @@
         background-image: linear-gradient(to right, $color-primary 40%, $color-primary-dark 100%);
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond(tab-land) { // MEDIA QUERY
+          font-size: 2rem;
+         }
+
     }
         
-    
-
     &:hover,
     &:visited {
       background-image: linear-gradient(to right, $color-primary, $color-primary-light);
-      
-
-     
     }
 
-
-    
-
- 
 }
 

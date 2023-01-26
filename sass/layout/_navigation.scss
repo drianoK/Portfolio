@@ -3,12 +3,11 @@
         padding: 1rem 1rem;
         border-radius: 2px;
         top: 0;
-        left: 0;
-
-        
+        left: 0;  
     }
 
 .navbar {
+
         list-style-type: none;
         display: flex;
         padding-inline-start: 0;
@@ -31,6 +30,7 @@
     }
 
     &__link {
+        border: none;
         &:link,
         &:visited {
             color: $color-white;
@@ -50,7 +50,6 @@
             transform: rotate(3deg) scale(1.1);
             cursor: pointer;
             color: $color-primary;
-           
         }
 
         &--main {
@@ -61,5 +60,4 @@
 
     }
     
-
 }

@@ -53,9 +53,16 @@ body {
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     padding: 5px;
 
+    
+
     &__white--title {
         color: $color-white;
         text-shadow: none;
+
+
+        @include respond(tab-land) { // MEDIA QUERY
+            margin-top: -6rem;
+           }
     }
     
 }
@@ -64,7 +71,12 @@ body {
     font-size: 2.7rem;
     font-weight: 600;
     font-family: inherit;
-    margin-top: 2rem;
     margin-bottom: 4rem;
     color: $color-white;
+
+
+
+    @include respond(tab-land) {
+        margin-bottom: 3rem;
+     }
 }
