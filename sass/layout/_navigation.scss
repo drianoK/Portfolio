@@ -17,9 +17,11 @@
         margin-left: 2rem;
         border: none;
 
-        @include respond(tab-land) {    // MEDIA QUERY
+        @include respond(tab-port) {    // MEDIA QUERY
             margin-left: 0;
         }
+
+
         
        
     &__item {
@@ -45,6 +47,10 @@
             transition: all .2s;
             display: inline-block;
             transition: all .2s;
+
+            @include respond(tab-port) {    // MEDIA QUERY
+                padding: 1.2rem 1.5rem;
+            }
             
         }
 
