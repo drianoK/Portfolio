@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 
 0-600px:    Phone
@@ -279,15 +280,14 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% Ű !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 10rem) / 2); }
-    @media (max-width: 56.25em) {
-      .row .col-1-of-2 {
-        max-width: 100%; } }
-  @media (max-width: 56.25em) {
-    .row {
-      display: flex;
-      flex-direction: column; } }
 
 .header {
   height: 98vh;
