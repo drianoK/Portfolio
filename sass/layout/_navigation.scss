@@ -16,6 +16,10 @@
         animation-fill-mode: backwards;
         margin-left: 2rem;
         border: none;
+
+        @include respond(tab-land) {    // MEDIA QUERY
+            margin-left: 0;
+        }
         
        
     &__item {
