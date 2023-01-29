@@ -23,7 +23,7 @@ html {
         font-size: 50%;
     }
 
-    @include respond(phone) { // 1rem = 6px; 6px / 16px = 37.5%;
+    @include respond(phone) { // 1rem = 7px; 7px / 16px = 43.75%;
         font-size: 43.75%;
     }
  
