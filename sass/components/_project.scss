@@ -34,10 +34,6 @@
         width: 100%;
         margin-left: 4rem;
 
-        
-        @include respond(tab-land) {
-            margin-left: 0;
-        }
             @include respond(tab-port) {
                 margin-left: 0;
             }
