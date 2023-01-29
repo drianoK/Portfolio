@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 
 0-600px:    Phone
@@ -243,10 +242,6 @@ body {
   width: 60%;
   box-shadow: 0 1rem 3rem rgba(17, 17, 17, 0.4);
   margin-left: 10rem; }
-  @media (max-width: 75em) {
-    .wrapper__photo {
-      width: 100%;
-      margin-left: 0; } }
 
 .wrapper__text {
   font-family: inherit;
@@ -272,6 +267,9 @@ body {
       max-width: 95rem; } }
   .row:not(:last-child) {
     margin-bottom: 12rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 8rem; } }
   .row::after {
     content: "";
     display: table;
@@ -285,7 +283,7 @@ body {
           margin-right: 0; } }
     @media (max-width: 56.25em) {
       .row [class^="col-"] {
-        width: 100% Ű !important; } }
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 10rem) / 2); }
 
