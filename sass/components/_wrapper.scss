@@ -1,12 +1,23 @@
 .wrapper {
     
+    @include respond(tab-land) {     // MEDIA QUERY
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
 
     &__photo {
         width: 60%;
         box-shadow: 0 1rem 3rem rgba($color-black, .4);
         margin-left: 10rem;
         
-
+        @include respond(tab-land) {     // MEDIA QUERY
+            max-width: 50%;
+            height: auto;
+            margin-left: 0;
+        }
      
     }
 
@@ -20,6 +31,11 @@
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 2rem;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+                
+            }
     }
 
 }

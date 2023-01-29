@@ -1,12 +1,7 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
-
-
-    @include respond(tab-land) {     // MEDIA QUERY
-        max-width: 95rem;
-    }
-
+    
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -17,17 +12,21 @@
 
     }
 
-    @include clearfix;
+    @include respond(tab-land) {     // MEDIA QUERY
+        max-width: 60rem;
+    }
 
+    @include clearfix;
+                                                            
     [class^="col-"] {
         float: left;
  
         &:not(:last-child) {
          margin-right: $gutter-horizontal;
 
-         @include respond(tab-port) {
-            margin-right: 0;
-            margin-bottom: $gutter-vertical-small;    // MEDIA QUERY
+            @include respond(tab-port) {  // MEDIA QUERY
+                margin-right: 0;
+                 margin-bottom: $gutter-vertical-small;    
         }
 
         }
@@ -41,5 +40,5 @@
        width: calc((100% - #{10rem}) / 2);
     }
 
-   
+
 }
