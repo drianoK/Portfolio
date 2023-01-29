@@ -1,5 +1,7 @@
 .wrapper {
     
+
+
     @include respond(tab-port) {     // MEDIA QUERY
         display: flex;
         justify-content: center;
@@ -12,7 +14,10 @@
         width: 60%;
         box-shadow: 0 1rem 3rem rgba($color-black, .4);
         margin-left: 10rem;
+
         
+   
+
         @include respond(tab-port) {     // MEDIA QUERY
             max-width: 50%;
             height: auto;
@@ -27,7 +32,7 @@
     line-height: 2.5rem;
     margin-bottom: 2rem;
 
-    @include respond(tab-port) {    // MEDIA QUERY
+    @include respond(tab-land) {    // MEDIA QUERY
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 2rem;
