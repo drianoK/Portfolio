@@ -237,6 +237,9 @@ body {
 .project__img {
   width: 100%;
   margin-left: 4rem; }
+  @media (max-width: 75em) {
+    .project__img {
+      margin-left: 0; } }
   @media (max-width: 56.25em) {
     .project__img {
       margin-left: 0; } }
