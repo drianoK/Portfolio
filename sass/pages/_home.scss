@@ -21,7 +21,7 @@
 
   
     @include respond(tab-land) {    // MEDIA QUERY
-                transform: skewY(-13deg);
+                transform: skewY(-14deg);
             }
 
             
@@ -32,7 +32,7 @@
             transform: skewY(9deg);
 
         @include respond(tab-land) {    // MEDIA QUERY
-                transform: skewY(13deg);
+                transform: skewY(14deg);
             }
     }
 }
