@@ -26,18 +26,15 @@
          margin-right: $gutter-horizontal;
 
          @include respond(tab-port) {
-            margin-right: 0;    // MEDIA QUERY
+            margin-right: 0;
+            margin-bottom: $gutter-vertical-small;    // MEDIA QUERY
         }
 
         }
 
         @include respond(tab-port) {
             width: 100% !important;
-            
-            
         }
-
-
     }
 
     .col-1-of-2 {

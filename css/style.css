@@ -280,7 +280,8 @@ body {
       margin-right: 6rem; }
       @media (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
-          margin-right: 0; } }
+          margin-right: 0;
+          margin-bottom: 8rem; } }
     @media (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
