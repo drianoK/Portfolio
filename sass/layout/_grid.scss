@@ -13,6 +13,11 @@
     }
 
     @include respond(tab-land) {     // MEDIA QUERY
+        max-width: 98rem;
+    }
+
+
+    @include respond(tab-port) {     // MEDIA QUERY
         max-width: 60rem;
     }
 
@@ -24,7 +29,8 @@
         &:not(:last-child) {
          margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {  // MEDIA QUERY
+            
+          @include respond(tab-port) {  // MEDIA QUERY
                 margin-right: 0;
                  margin-bottom: $gutter-vertical-small;    
         }
