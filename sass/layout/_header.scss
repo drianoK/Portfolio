@@ -9,6 +9,12 @@
     position: relative;
     //margin-bottom: 6rem;
 
+
+    @include respond(tab-port) {  // MEDIA QUERY
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+        clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%); 
+}
+
     &__text-box {
         width: 100%;
         top: 45%;
