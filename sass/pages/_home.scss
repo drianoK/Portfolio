@@ -4,10 +4,6 @@
     margin-top: -23vh;
 
     @include respond(tab-land) {    // MEDIA QUERY
-        padding: 28rem 0;
-    }
-
-    @include respond(tab-port) {    // MEDIA QUERY
         padding: 35rem 0;
     }
 

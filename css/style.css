@@ -410,9 +410,6 @@ body {
   margin-top: -23vh; }
   @media (max-width: 75em) {
     .section-about {
-      padding: 28rem 0; } }
-  @media (max-width: 56.25em) {
-    .section-about {
       padding: 35rem 0; } }
 
 .section-projects {
