@@ -60,12 +60,18 @@
 
             @include respond(phone) {
 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
                 height: 100vh;
                 width: 100%;
                 position: fixed;
                 top: 0;
                 right: 0;
                 z-index: 1500;
+
+                
             }
 
 
@@ -92,6 +98,7 @@
                     align-items: center;
                     flex-direction: column;
                     text-align: center;
+                    width: 90%;
                 }
         
         
