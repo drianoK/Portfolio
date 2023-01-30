@@ -336,11 +336,8 @@ body {
   border-radius: 2px;
   top: 0;
   left: 0; }
-  .navigation__hamburger-menu {
-    display: none; }
-    @media (max-width: 37.5em) {
-      .navigation__hamburger-menu {
-        display: contents; } }
+  .navigation__background {
+    background-color: white; }
 
 .navbar {
   list-style-type: none;

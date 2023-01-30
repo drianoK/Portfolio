@@ -5,15 +5,6 @@
         top: 0;
         left: 0;  
 
-        &__hamburger-menu {
-            display: none;
-
-
-            
-            @include respond(phone) {
-                display: contents;
-            }
-        }
 
         &__checkbox {
 
@@ -27,7 +18,7 @@
 
         &__background {
 
-
+            background-color: white;
         }
 
     }
