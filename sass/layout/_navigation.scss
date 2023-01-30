@@ -4,6 +4,32 @@
         border-radius: 2px;
         top: 0;
         left: 0;  
+
+        &__hamburger-menu {
+            display: none;
+
+
+            
+            @include respond(phone) {
+                display: contents;
+            }
+        }
+
+        &__checkbox {
+
+
+        }
+
+        &__button {
+
+
+        }
+
+        &__background {
+
+
+        }
+
     }
 
 .navbar {
