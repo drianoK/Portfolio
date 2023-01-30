@@ -7,18 +7,47 @@
 
 
         &__checkbox {
-
+            display: none;
 
         }
 
         &__button {
 
+            visibility: hidden;
+
+            @include respond(phone) {
+                visibility: inherit;
+                color: $color-black;
+                height: 9rem;
+                width: 9rem;
+                position: fixed;
+                top: 6rem;
+                right: 6rem;
+                z-index: 2000;
+
+            }
+            
 
         }
 
         &__background {
 
-            background-color: white;
+            visibility: hidden;
+
+            @include respond(phone) {
+                visibility: inherit;
+                width: 8rem;
+                height: 8rem;
+                --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                background-color: white;
+                top: 6.5rem;
+                right: 6.5rem;
+                position: fixed;
+                cursor: pointer;
+                z-index: 1000;
+            }
+        
         }
 
     }
