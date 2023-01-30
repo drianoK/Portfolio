@@ -1,7 +1,5 @@
 .wrapper {
     
-
-
     @include respond(tab-port) {     // MEDIA QUERY
         display: flex;
         justify-content: center;
@@ -15,9 +13,7 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .4);
         margin-left: 10rem;
 
-        
-   
-
+    
         @include respond(tab-port) {     // MEDIA QUERY
             max-width: 50%;
             height: auto;
@@ -50,7 +46,6 @@
 .wrapper__contact {
     margin-top: 5rem;
     
-
 
     &--text {
         font-size: 1.8rem;

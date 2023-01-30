@@ -48,12 +48,6 @@ body {
         }
     }
 
-    // &__white {
-    //     color: $color-white;
-    // }
-
-
-   
 }
 
 
@@ -68,7 +62,6 @@ body {
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     padding: 5px;
 
-    
 
     &__white--title {
         color: $color-white;
@@ -88,7 +81,6 @@ body {
     font-family: inherit;
     margin-bottom: 4rem;
     color: $color-white;
-
 
 
     @include respond(tab-land) {

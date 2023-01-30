@@ -11,10 +11,6 @@ html {
     background-color: $color-white;
 
 
-  
-   
-
-
     @include respond(tab-land) { // 1rem = 9px; 9px / 16px = 56.25%;
         font-size: 56.25%;
     }
@@ -30,8 +26,6 @@ html {
     @include respond(big-desktop) { // 1rem = 12px; 12px / 16px = 75%;
         font-size: 75%;
     }
-
-
 }
 
 
