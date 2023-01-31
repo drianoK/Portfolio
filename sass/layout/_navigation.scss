@@ -3,7 +3,6 @@
             width: 100%;
             z-index: 900;
             position: absolute;
-            
 
         &__checkbox {
             display: none;
@@ -30,7 +29,6 @@
 
             }
             
-
         }
 
         &__background {
@@ -69,12 +67,7 @@
                 top: 0;
                 right: 0;
                 z-index: 1500;
-
-                
             }
-
-
-
 
             .navbar{
 
@@ -87,9 +80,6 @@
                 margin-top: -3rem;
                 
 
-                
-                
-        
                 @include respond(tab-port) {    // MEDIA QUERY
                     margin-left: 0;
                 }
