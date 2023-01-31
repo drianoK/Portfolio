@@ -86,9 +86,6 @@ html {
 
 body {
   box-sizing: border-box; }
-  @media (max-width: 37.5em) {
-    body {
-      z-index: -1; } }
 
 body {
   font-family: "Lato", sans-serif;

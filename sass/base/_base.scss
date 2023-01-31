@@ -37,7 +37,5 @@ body {
     box-sizing: border-box;
 
 
-    @include respond(phone) { 
-        z-index: -1;
-    }
+    
 }
