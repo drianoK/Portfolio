@@ -86,11 +86,12 @@
 
                 @include respond(phone) {
                     display: flex;
-                    justify-content: center;
                     align-items: center;
                     flex-direction: column;
                     text-align: center;
-                    width: 90%;
+                    width: 100%;
+                    
+                    
                 }
         
         
@@ -99,6 +100,12 @@
                 font-weight: 700;
                 margin-top: 3rem;
                 margin-right: 2rem;
+
+                @include respond(phone) {
+                    letter-spacing: .3rem;
+                    
+                }
+
             }
         
             &__item--push {
@@ -106,6 +113,7 @@
 
                 @include respond(phone) {
                     margin-left: 0;
+                
                 }
             }
         
@@ -127,11 +135,14 @@
                         }
 
                         @include respond(phone) {
-                            color: $color-grey-dark-3;
+                            
                             font-weight: 700;
-                            font-size: 3rem;
-                            margin: 2rem;
-                            padding: 2rem 6rem;
+                            font-size: 2rem;
+                            margin: 1rem;
+                            padding: 2rem 8rem;
+                            background-image: linear-gradient(to right bottom, rgba($color-grey-dark-3, .6), rgba($color-grey-dark-3, .6));
+                            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+                            border-radius: 3px;
                             
                             
                         }
@@ -148,8 +159,9 @@
                         
 
                             @include respond(phone) {
-                                box-shadow: 0rem 1rem 2rem rgba($color-black, .2);
-                                color: $color-white;
+                                
+                                background-image: linear-gradient(to right, $color-white, $color-white);
+                                box-shadow: 0rem 1rem 2rem rgba($color-black, .3);
                             }
 
                         }
@@ -158,9 +170,12 @@
                         font-size: 2rem;
                         letter-spacing: .2rem;
 
+
+                        @include respond(phone) {
+                            letter-spacing: .3rem;
                         }
 
-                       
+                    }
         
                 }
             

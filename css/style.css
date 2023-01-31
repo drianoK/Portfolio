@@ -392,16 +392,18 @@ body {
     @media (max-width: 37.5em) {
       .navigation__nav .navbar {
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: center;
-        width: 90%; } }
+        width: 100%; } }
     .navigation__nav .navbar__item {
       font-size: 1.8rem;
       font-weight: 700;
       margin-top: 3rem;
       margin-right: 2rem; }
+      @media (max-width: 37.5em) {
+        .navigation__nav .navbar__item {
+          letter-spacing: .3rem; } }
     .navigation__nav .navbar__item--push {
       margin-left: auto; }
       @media (max-width: 37.5em) {
@@ -419,11 +421,13 @@ body {
           padding: 1.2rem 1.5rem; } }
       @media (max-width: 37.5em) {
         .navigation__nav .navbar__link:link, .navigation__nav .navbar__link:visited {
-          color: #333;
           font-weight: 700;
-          font-size: 3rem;
-          margin: 2rem;
-          padding: 2rem 6rem; } }
+          font-size: 2rem;
+          margin: 1rem;
+          padding: 2rem 8rem;
+          background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.6));
+          box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.2);
+          border-radius: 3px; } }
     .navigation__nav .navbar__link:hover, .navigation__nav .navbar__link:active {
       background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.6));
       box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.8);
@@ -432,11 +436,14 @@ body {
       color: #55c57a; }
       @media (max-width: 37.5em) {
         .navigation__nav .navbar__link:hover, .navigation__nav .navbar__link:active {
-          box-shadow: 0rem 1rem 2rem rgba(17, 17, 17, 0.2);
-          color: #fff; } }
+          background-image: linear-gradient(to right, #fff, #fff);
+          box-shadow: 0rem 1rem 2rem rgba(17, 17, 17, 0.3); } }
     .navigation__nav .navbar__link--main {
       font-size: 2rem;
       letter-spacing: .2rem; }
+      @media (max-width: 37.5em) {
+        .navigation__nav .navbar__link--main {
+          letter-spacing: .3rem; } }
 
 .footer {
   background-image: linear-gradient(to bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));
