@@ -1,11 +1,9 @@
 .navigation {
-        max-width: 100%;
-        padding: 1rem 1rem;
-        border-radius: 2px;
-        top: 0;
-        left: 0; 
-        
-    
+
+            width: 100%;
+            z-index: 900;
+            position: absolute;
+            
 
         &__checkbox {
             display: none;
@@ -19,7 +17,9 @@
             @include respond(phone) {
                 visibility: inherit;
                 color: $color-black;
-                border-radius: 50%;
+                
+                --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
                 height: 9rem;
                 width: 9rem;
                 position: fixed;
@@ -57,7 +57,6 @@
         }
 
         &__nav{
-
             @include respond(phone) {
 
                 display: flex;
@@ -86,6 +85,9 @@
                 animation-fill-mode: backwards;
                 margin-left: 2rem;
                 margin-top: -3rem;
+                
+
+                
                 
         
                 @include respond(tab-port) {    // MEDIA QUERY
