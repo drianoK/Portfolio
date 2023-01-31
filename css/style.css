@@ -402,6 +402,7 @@ body {
       @media (max-width: 37.5em) {
         .navigation__nav .navbar__item {
           letter-spacing: .3rem;
+          margin-top: 0;
           margin-right: 0; } }
     .navigation__nav .navbar__item--push {
       margin-left: auto; }
@@ -422,7 +423,7 @@ body {
         .navigation__nav .navbar__link:link, .navigation__nav .navbar__link:visited {
           font-weight: 700;
           font-size: 2rem;
-          margin: 1rem;
+          margin: 2rem;
           padding: 2rem 8rem;
           background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.6));
           box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.2);

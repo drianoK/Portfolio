@@ -101,7 +101,9 @@
 
                 @include respond(phone) {
                     letter-spacing: .3rem;
+                    margin-top: 0;
                     margin-right: 0;
+                    
                 }
 
             }
@@ -136,7 +138,7 @@
                             
                             font-weight: 700;
                             font-size: 2rem;
-                            margin: 1rem;
+                            margin: 2rem;
                             padding: 2rem 8rem;
                             background-image: linear-gradient(to right bottom, rgba($color-grey-dark-3, .6), rgba($color-grey-dark-3, .6));
                             box-shadow: 0 1rem 2rem rgba($color-black, .2);
