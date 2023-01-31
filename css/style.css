@@ -420,21 +420,26 @@ body {
       @media (max-width: 56.25em) {
         .navigation__nav .navbar__link:link, .navigation__nav .navbar__link:visited {
           padding: 1.2rem 1.5rem; } }
+      @media (max-width: 37.5em) {
+        .navigation__nav .navbar__link:link, .navigation__nav .navbar__link:visited {
+          color: #333;
+          font-weight: 700;
+          font-size: 3rem;
+          margin: 2rem;
+          padding: 2rem 6rem; } }
     .navigation__nav .navbar__link:hover, .navigation__nav .navbar__link:active {
       background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.6));
       box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.8);
       transform: rotate(3deg) scale(1.1);
       cursor: pointer;
-      color: #55c57a;
-      border: none; }
+      color: #55c57a; }
+      @media (max-width: 37.5em) {
+        .navigation__nav .navbar__link:hover, .navigation__nav .navbar__link:active {
+          box-shadow: 0rem 1rem 2rem rgba(17, 17, 17, 0.2);
+          color: #fff; } }
     .navigation__nav .navbar__link--main {
       font-size: 2rem;
       letter-spacing: .2rem; }
-    @media (max-width: 37.5em) {
-      .navigation__nav .navbar__link {
-        font-size: 3rem;
-        font-weight: 500;
-        margin: 2rem; } }
 
 .footer {
   background-image: linear-gradient(to bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));
