@@ -24,9 +24,9 @@
                 position: fixed;
                 top: 2rem;
                 right: 2rem;
+                box-shadow: 0 2rem 3rem rgba($color-black, .7);
                 z-index: 2000;
-                box-shadow: 0 1rem 3rem rgba($color-black, .7);
-                cursor: pointer;
+                
             }
 
         }
