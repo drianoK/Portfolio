@@ -29,8 +29,6 @@
                 cursor: pointer;
             }
 
-            
-            
         }
 
         &__background {
@@ -185,4 +183,23 @@
             }   
 
         }
+
+
+    // ICON // 
+
+    &,
+    &::before,
+    &::after {
+
+        @include respond(phone) {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-grey-dark-3;
+        }
+        
+
+    }
+
+
+
 }
