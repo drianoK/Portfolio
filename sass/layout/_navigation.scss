@@ -25,9 +25,11 @@
                 top: 4rem;
                 right: 4rem;
                 z-index: 2000;
-                
-
+                box-shadow: 0 1rem 3rem rgba($color-black, .7);
+                cursor: pointer;
             }
+
+            
             
         }
 
@@ -47,24 +49,25 @@
                 opacity: 1;
                 
                 transform: scale(50);
-               
+                
             }
         
         }
 
         &__nav{
-            @include respond(phone) {
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            @include respond(phone) {
 
                 height: 100vh;
                 width: 100%;
                 position: fixed;
                 top: 0;
                 right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 z-index: 1500;
+
             }
 
             .navbar{
@@ -89,7 +92,7 @@
                     flex-direction: column;
                     width: 100%;
                     
-                    
+            
                 }
         
         
