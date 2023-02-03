@@ -393,8 +393,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        width: 100%; } }
+        flex-direction: column; } }
     .navigation__nav .navbar__item {
       font-size: 1.8rem;
       font-weight: 700;
