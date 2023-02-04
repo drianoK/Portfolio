@@ -7,6 +7,16 @@
         &__checkbox {
             display: none;
 
+
+            @include respond(phone){
+                width: 8rem;
+                height: 8rem;
+                top: 6.5rem;
+                right: 6.5rem;
+                z-index: 5000;
+                background-color: red;
+                
+            }
         }
 
         &__button {
@@ -22,11 +32,10 @@
                 height: 8rem;
                 width: 8rem;
                 position: fixed;
-                top: 2rem;
-                right: 2rem;
+                top: 3rem;
+                right: 3rem;
                 box-shadow: 0 2rem 3rem rgba($color-black, .7);
                 z-index: 2000;
-                animation: none;
             }
 
         }
@@ -37,15 +46,11 @@
 
             @include respond(phone) {
                 visibility: inherit;
-                width: 8rem;
-                height: 8rem;
+                height: 100vh;
+                width: 100%;
                 position: fixed;
-                z-index: 1000;
                 background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
-                top: 6.5rem;
-                right: 6.5rem;
-                opacity: 1;
-                
+                z-index: 1000;
                 transform: scale(50);
                 
             }
@@ -54,17 +59,15 @@
 
         &__nav{
 
-            
-
             @include respond(phone) {
 
                 height: 100vh;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                position: relative;
+                position: fixed;
                 z-index: 1500;
-
             }
 
             .navbar{
@@ -106,7 +109,6 @@
             }
         
             
-        
             &__link {
 
                     @include respond(phone){

@@ -336,6 +336,14 @@ body {
   position: absolute; }
   .navigation__checkbox {
     display: none; }
+    @media (max-width: 37.5em) {
+      .navigation__checkbox {
+        width: 8rem;
+        height: 8rem;
+        top: 6.5rem;
+        right: 6.5rem;
+        z-index: 5000;
+        background-color: red; } }
   .navigation__button {
     visibility: hidden; }
     @media (max-width: 37.5em) {
@@ -348,32 +356,29 @@ body {
         height: 8rem;
         width: 8rem;
         position: fixed;
-        top: 2rem;
-        right: 2rem;
+        top: 3rem;
+        right: 3rem;
         box-shadow: 0 2rem 3rem rgba(17, 17, 17, 0.7);
-        z-index: 2000;
-        animation: none; } }
+        z-index: 2000; } }
   .navigation__background {
     visibility: hidden; }
     @media (max-width: 37.5em) {
       .navigation__background {
         visibility: inherit;
-        width: 8rem;
-        height: 8rem;
+        height: 100vh;
+        width: 100%;
         position: fixed;
-        z-index: 1000;
         background-image: linear-gradient(to right bottom, #55c57a, #28b485);
-        top: 6.5rem;
-        right: 6.5rem;
-        opacity: 1;
+        z-index: 1000;
         transform: scale(50); } }
   @media (max-width: 37.5em) {
     .navigation__nav {
       height: 100vh;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
+      position: fixed;
       z-index: 1500; } }
   .navigation__nav .navbar {
     display: flex;
