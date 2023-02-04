@@ -340,10 +340,9 @@ body {
       .navigation__checkbox {
         width: 8rem;
         height: 8rem;
-        top: 6.5rem;
-        right: 6.5rem;
-        z-index: 5000;
-        background-color: red; } }
+        top: 3.5rem;
+        right: 3.5rem;
+        position: fixed; } }
   .navigation__button {
     visibility: hidden; }
     @media (max-width: 37.5em) {

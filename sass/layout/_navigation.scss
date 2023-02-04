@@ -11,11 +11,9 @@
             @include respond(phone){
                 width: 8rem;
                 height: 8rem;
-                top: 6.5rem;
-                right: 6.5rem;
-                z-index: 5000;
-                background-color: red;
-                
+                top: 3.5rem;
+                right: 3.5rem;
+                position: fixed;
             }
         }
 
@@ -52,7 +50,6 @@
                 background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
                 z-index: 1000;
                 transform: scale(50);
-                
             }
         
         }
@@ -68,6 +65,7 @@
                 align-items: center;
                 position: fixed;
                 z-index: 1500;
+                
             }
 
             .navbar{
