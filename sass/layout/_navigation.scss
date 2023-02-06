@@ -85,7 +85,7 @@
                 @include respond(phone) {
                     display: block;
                     margin-left: 0;
-                    width: 70%;
+                    min-width: 70%;
                 }
 
 

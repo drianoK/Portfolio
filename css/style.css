@@ -394,7 +394,7 @@ body {
       .navigation__nav .navbar {
         display: block;
         margin-left: 0;
-        width: 70%; } }
+        min-width: 70%; } }
     .navigation__nav .navbar__item {
       font-size: 1.8rem;
       font-weight: 700;
