@@ -80,7 +80,7 @@ html {
   @media (max-width: 37.5em) {
     html {
       font-size: 43.75%; } }
-  @media (min-width: 125em) {
+  @media (min-width: 160em) {
     html {
       font-size: 75%; } }
 
