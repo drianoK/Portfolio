@@ -340,36 +340,75 @@ body {
       .navigation__checkbox {
         width: 8rem;
         height: 8rem;
-        top: 3.5rem;
-        right: 3.5rem;
-        position: fixed; } }
-  .navigation__button {
-    visibility: hidden; }
-    @media (max-width: 37.5em) {
-      .navigation__button {
-        visibility: inherit;
-        color: #111;
-        background-color: #fff;
-        --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        height: 8rem;
-        width: 8rem;
-        position: fixed;
         top: 3rem;
         right: 3rem;
-        box-shadow: 0 2rem 3rem rgba(17, 17, 17, 0.7);
-        z-index: 2000; } }
-  .navigation__background {
-    visibility: hidden; }
-    @media (max-width: 37.5em) {
-      .navigation__background {
-        visibility: inherit;
-        height: 100vh;
-        width: 100%;
         position: fixed;
-        background-image: linear-gradient(to right bottom, #55c57a, #28b485);
-        z-index: 1000;
-        transform: scale(50); } }
+        --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      color: #111;
+      background-color: #fff;
+      --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      height: 8rem;
+      width: 8rem;
+      position: fixed;
+      top: 3rem;
+      right: 3rem;
+      box-shadow: 0 2rem 3rem rgba(17, 17, 17, 0.7);
+      z-index: 2000;
+      cursor: pointer; } }
+  @media (max-width: 37.5em) {
+    .navigation__icon {
+      position: relative;
+      left: 0; } }
+  @media (max-width: 37.5em) {
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 5rem;
+      height: 2px;
+      background-color: #333;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+  @media (max-width: 37.5em) {
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      margin: 0 auto;
+      transition: all .2s; } }
+  @media (max-width: 37.5em) {
+    .navigation__icon::before {
+      top: -1rem; }
+    .navigation__icon::after {
+      top: 1.3rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__checkbox:checked + .navigation__button .navigation__icon {
+      background-color: transparent; } }
+  @media (max-width: 37.5em) {
+    .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+      top: 0;
+      left: 0;
+      transform: rotate(135deg); } }
+  @media (max-width: 37.5em) {
+    .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+      top: 0;
+      left: 0;
+      transform: rotate(-135deg); } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      visibility: inherit;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      background-image: linear-gradient(to right bottom, #55c57a, #28b485);
+      z-index: 1000;
+      transition: transform .8s ease-in-out;
+      transform: translateX(100rem); } }
+  @media (max-width: 37.5em) {
+    .navigation .menu-active {
+      transform: translateX(0); } }
   @media (max-width: 37.5em) {
     .navigation__nav {
       height: 100vh;
@@ -378,7 +417,8 @@ body {
       justify-content: center;
       align-items: center;
       position: fixed;
-      z-index: 1500; } }
+      z-index: 1500;
+      animation: none !important; } }
   .navigation__nav .navbar {
     display: flex;
     list-style-type: none;
@@ -445,29 +485,6 @@ body {
       @media (max-width: 37.5em) {
         .navigation__nav .navbar__link--main {
           letter-spacing: .3rem; } }
-  @media (max-width: 37.5em) {
-    .navigation__icon {
-      position: relative;
-      left: 0; } }
-  @media (max-width: 37.5em) {
-    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-      width: 5rem;
-      height: 2px;
-      background-color: #333;
-      display: inline-block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); } }
-  @media (max-width: 37.5em) {
-    .navigation__icon::before, .navigation__icon::after {
-      content: "";
-      position: absolute;
-      margin: 0 auto; } }
-  @media (max-width: 37.5em) {
-    .navigation__icon::before {
-      top: -1rem; }
-    .navigation__icon::after {
-      top: 1.3rem; } }
 
 .footer {
   background-image: linear-gradient(to bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));

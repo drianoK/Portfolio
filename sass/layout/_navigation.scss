@@ -4,25 +4,29 @@
             z-index: 900;
             position: absolute;
 
-        &__checkbox {
-            display: none;
+            
 
+        &__checkbox {
+            
+            display: none;
 
             @include respond(phone){
                 width: 8rem;
                 height: 8rem;
-                top: 3.5rem;
-                right: 3.5rem;
+                top: 3rem;
+                right: 3rem;
                 position: fixed;
+                --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            
             }
         }
 
         &__button {
-
-            visibility: hidden;
+            
 
             @include respond(phone) {
-                visibility: inherit;
+                
                 color: $color-black;
                 background-color: $color-white;
                 --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -34,13 +38,92 @@
                 right: 3rem;
                 box-shadow: 0 2rem 3rem rgba($color-black, .7);
                 z-index: 2000;
+                cursor: pointer;
+               
             }
 
         }
 
-        &__background {
 
-            visibility: hidden;
+        &__icon {
+
+            @include respond(phone) {
+                position: relative;
+                left: 0;
+                
+            }
+            
+        
+            &,
+            &::before,
+            &::after {
+    
+                @include respond(phone) {
+                    width: 5rem;
+                    height: 2px;
+                    background-color: $color-grey-dark-3;
+                    display: inline-block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+    
+            &::before,
+            &::after {
+    
+                @include respond (phone) {
+                    content: "";
+                    position: absolute;
+                    margin: 0 auto;
+                    transition: all .2s;
+                    
+                }   
+            }
+    
+    
+            @include respond(phone) {
+                &::before { top: -1rem;}
+                &::after { top: 1.3rem;}
+            }
+
+    
+        }
+        
+        &__checkbox:checked + &__button &__icon {
+
+            @include respond(phone) {
+            background-color: transparent;
+            }
+            
+        }
+
+        &__checkbox:checked + &__button &__icon::before {
+
+            @include respond(phone) {
+            
+            top: 0;
+            left: 0;
+            transform: rotate(135deg);
+            
+            }
+            
+        }
+
+        &__checkbox:checked + &__button &__icon::after {
+
+            @include respond(phone) {
+            
+            top: 0;
+            left: 0;
+            transform: rotate(-135deg) ;
+           
+            }
+            
+        }
+
+
+        &__background {
 
             @include respond(phone) {
                 visibility: inherit;
@@ -49,9 +132,18 @@
                 position: fixed;
                 background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
                 z-index: 1000;
-                transform: scale(50);
+                transition: transform .8s ease-in-out;
+                transform: translateX(100rem);
+                }
+
+                
             }
         
+        .menu-active {
+            @include respond(phone) {
+                transform: translateX(0);
+            }
+            
         }
 
         &__nav{
@@ -65,6 +157,7 @@
                 align-items: center;
                 position: fixed;
                 z-index: 1500;
+                animation: none !important;
                 
             }
 
@@ -76,6 +169,7 @@
                 animation-fill-mode: backwards;
                 margin-top: -2rem;
                 margin-left: 2rem;
+               
                 
 
                 @include respond(tab-port) {    // MEDIA QUERY
@@ -86,6 +180,7 @@
                     display: block;
                     margin-left: 0;
                     min-width: 70%;
+                    
                 }
 
 
@@ -98,6 +193,7 @@
                 @include respond(phone) {
                     letter-spacing: .3rem;
                     margin-top: 0;
+                    
                 }
 
 
@@ -138,6 +234,7 @@
                             background-image: linear-gradient(to right bottom, rgba($color-grey-dark-3, .6), rgba($color-grey-dark-3, .6));
                             box-shadow: 0 1rem 2rem rgba($color-black, .2);
                             border-radius: 3px;
+                            
                         }
                     
                     }
@@ -176,51 +273,5 @@
 
         }
 
-
-    // ICON // 
-
-
-    &__icon {
-
-        @include respond(phone) {
-            position: relative;
-            left: 0;
-            
-        }
         
-    
-        &,
-        &::before,
-        &::after {
-
-            @include respond(phone) {
-                width: 5rem;
-                height: 2px;
-                background-color: $color-grey-dark-3;
-                display: inline-block;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        &::before,
-        &::after {
-
-            @include respond (phone) {
-                content: "";
-                position: absolute;
-                margin: 0 auto;
-                
-            }   
-        }
-
-
-        @include respond(phone) {
-            &::before { top: -1rem;}
-            &::after { top: 1.3rem;}
-        }
-        
-    }
-
 }
