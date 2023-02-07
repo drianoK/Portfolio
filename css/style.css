@@ -404,7 +404,7 @@ body {
       position: fixed;
       background-image: linear-gradient(to right bottom, #55c57a, #28b485);
       z-index: 1000;
-      transition: transform .8s ease-in-out;
+      transition: transform .3s ease-in-out;
       transform: translateX(100rem); } }
   @media (max-width: 37.5em) {
     .navigation .menu-active {

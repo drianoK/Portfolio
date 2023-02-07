@@ -5,7 +5,6 @@
             position: absolute;
 
             
-
         &__checkbox {
             
             display: none;
@@ -86,8 +85,6 @@
                 &::before { top: -1rem;}
                 &::after { top: 1.3rem;}
             }
-
-    
         }
 
         // BUTTON ANIMATION !!
@@ -96,8 +93,7 @@
 
             @include respond(phone) {  // MOBILE MEDIA QUERY
             background-color: transparent;
-            }
-            
+            }  
         }
 
         &__checkbox:checked + &__button &__icon::before {
@@ -106,9 +102,7 @@
             top: 0;
             left: 0;
             transform: rotate(135deg);
-            
-            }
-            
+            } 
         }
 
         &__checkbox:checked + &__button &__icon::after {
@@ -117,9 +111,7 @@
             top: 0;
             left: 0;
             transform: rotate(-135deg) ;
-           
-            }
-            
+            }   
         }
 
 
@@ -132,11 +124,9 @@
                 position: fixed;
                 background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
                 z-index: 1000;
-                transition: transform .8s ease-in-out;
+                transition: transform .3s ease-in-out;
                 transform: translateX(100rem);
-                }
-
-                
+                }  
             }
         
 
@@ -182,7 +172,6 @@
                     display: block;
                     margin-left: 0;
                     min-width: 70%;
-                    
                 }
 
 
@@ -236,7 +225,6 @@
                             background-image: linear-gradient(to right bottom, rgba($color-grey-dark-3, .6), rgba($color-grey-dark-3, .6));
                             box-shadow: 0 1rem 2rem rgba($color-black, .2);
                             border-radius: 3px;
-                            
                         }
                     
                     }
