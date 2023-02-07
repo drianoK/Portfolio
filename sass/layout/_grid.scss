@@ -7,17 +7,17 @@
         margin-bottom: $gutter-vertical;
 
         @include respond(tab-port) {
-            margin-bottom: $gutter-vertical-small;    // MEDIA QUERY
+            margin-bottom: $gutter-vertical-small;    // TABLET PORTRAIT MEDIA QUERY
         }
 
     }
 
-    @include respond(tab-land) {     // MEDIA QUERY
+    @include respond(tab-land) {    // TABLET LANDSCAPE MEDIA QUERY
         max-width: 95rem;
     }
 
 
-    @include respond(tab-port) {     // MEDIA QUERY
+    @include respond(tab-port) {     // TABLET PORTRAIT MEDIA QUERY
         max-width: 60rem;
     }
 
@@ -30,14 +30,14 @@
          margin-right: $gutter-horizontal;
 
             
-          @include respond(tab-port) {  // MEDIA QUERY
+          @include respond(tab-port) {  // TABLET PORTRAIT MEDIA QUERY
                 margin-right: 0;
                  margin-bottom: $gutter-vertical-small;    
         }
 
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port) {  // TABLET PORTRAIT MEDIA QUERY
             width: 100% !important;
         }
     }

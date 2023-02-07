@@ -22,7 +22,7 @@
         margin-bottom: 2rem;
         
 
-         @include respond(tab-land) {  // MEDIA QUERY
+         @include respond(tab-land) { // TABLET LANDSCAPE MEDIA QUERY
             font-size: 1.8rem;
             line-height: 2rem;
             font-weight: 500;
@@ -34,7 +34,7 @@
         width: 100%;
         margin-left: 4rem;
 
-            @include respond(tab-port) {
+            @include respond(tab-port) { // TABLET PORTRAIT MEDIA QUERY
                 margin-left: 0;
             }
     }

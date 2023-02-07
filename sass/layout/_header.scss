@@ -10,7 +10,7 @@
     
 
 
-    @include respond(tab-port) {  // MEDIA QUERY
+    @include respond(tab-port) {  // TABLET PORTRAIT MEDIA QUERY
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
         clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%); 
 }

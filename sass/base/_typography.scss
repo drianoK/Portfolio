@@ -19,7 +19,7 @@ body {
 
         animation: moveInRight ease-out 1.1s;
 
-        @include respond(tab-port) {    // MEDIA QUERY
+        @include respond(tab-port) {   // TABLET PORTRAIT MEDIA QUERY
             font-size: 2rem;
             font-weight: 700;
             line-height: 2rem;
@@ -41,7 +41,7 @@ body {
 
         animation: moveInLeft ease-out 1.1s;
 
-        @include respond(tab-port) {    // MEDIA QUERY
+        @include respond(tab-port) {    // TABLET PORTRAIT MEDIA QUERY
             font-size: 2rem;
             font-weight: 500;
             line-height: 2rem;
@@ -68,7 +68,7 @@ body {
         text-shadow: none;
 
 
-        @include respond(tab-land) { // MEDIA QUERY
+        @include respond(tab-land) { // TABLET LANDSCAPE MEDIA QUERY
             margin-top: -6rem;
            }
     }
@@ -83,7 +83,7 @@ body {
     color: $color-white;
 
 
-    @include respond(tab-land) {
+    @include respond(tab-land) { // TABLET LANDSCAPE MEDIA QUERY
         margin-bottom: 3rem;
      }
 }

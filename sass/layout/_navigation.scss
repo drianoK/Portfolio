@@ -10,7 +10,7 @@
             
             display: none;
 
-            @include respond(phone){
+            @include respond(phone){ // MOBILE MEDIA QUERY
                 width: 8rem;
                 height: 8rem;
                 top: 3rem;
@@ -25,7 +25,7 @@
         &__button {
             
 
-            @include respond(phone) {
+            @include respond(phone) {  // MOBILE MEDIA QUERY
                 
                 color: $color-black;
                 background-color: $color-white;
@@ -47,7 +47,7 @@
 
         &__icon {
 
-            @include respond(phone) {
+            @include respond(phone) {  // MOBILE MEDIA QUERY
                 position: relative;
                 left: 0;
                 
@@ -58,7 +58,7 @@
             &::before,
             &::after {
     
-                @include respond(phone) {
+                @include respond(phone) {  // MOBILE MEDIA QUERY
                     width: 5rem;
                     height: 2px;
                     background-color: $color-grey-dark-3;
@@ -72,7 +72,7 @@
             &::before,
             &::after {
     
-                @include respond (phone) {
+                @include respond (phone) {  // MOBILE MEDIA QUERY
                     content: "";
                     position: absolute;
                     margin: 0 auto;
@@ -82,17 +82,19 @@
             }
     
     
-            @include respond(phone) {
+            @include respond(phone) {  // MOBILE MEDIA QUERY
                 &::before { top: -1rem;}
                 &::after { top: 1.3rem;}
             }
 
     
         }
+
+        // BUTTON ANIMATION !!
         
         &__checkbox:checked + &__button &__icon {
 
-            @include respond(phone) {
+            @include respond(phone) {  // MOBILE MEDIA QUERY
             background-color: transparent;
             }
             
@@ -100,8 +102,7 @@
 
         &__checkbox:checked + &__button &__icon::before {
 
-            @include respond(phone) {
-            
+            @include respond(phone) {  // MOBILE MEDIA QUERY
             top: 0;
             left: 0;
             transform: rotate(135deg);
@@ -112,8 +113,7 @@
 
         &__checkbox:checked + &__button &__icon::after {
 
-            @include respond(phone) {
-            
+            @include respond(phone) {   // MOBILE MEDIA QUERY
             top: 0;
             left: 0;
             transform: rotate(-135deg) ;
@@ -125,7 +125,7 @@
 
         &__background {
 
-            @include respond(phone) {
+            @include respond(phone) {   // MOBILE MEDIA QUERY
                 visibility: inherit;
                 height: 100vh;
                 width: 100%;
@@ -139,8 +139,10 @@
                 
             }
         
+
+            // MOBIL NAVIGATION__BACKGROUND ANIMATION
         .menu-active {
-            @include respond(phone) {
+            @include respond(phone) {   // MOBILE MEDIA QUERY
                 transform: translateX(0);
             }
             
@@ -148,7 +150,7 @@
 
         &__nav{
 
-            @include respond(phone) {
+            @include respond(phone) {  // MOBILE MEDIA QUERY
 
                 height: 100vh;
                 width: 100%;
@@ -172,11 +174,11 @@
                
                 
 
-                @include respond(tab-port) {    // MEDIA QUERY
+                @include respond(tab-port) {    // TABLET PORTRAIT MEDIA QUERY
                     margin-left: 0;
                 }
 
-                @include respond(phone) {
+                @include respond(phone) {   // MOBILE MEDIA QUERY
                     display: block;
                     margin-left: 0;
                     min-width: 70%;
@@ -190,7 +192,7 @@
                 margin-top: 3rem;
                 margin-right: 2rem;
 
-                @include respond(phone) {
+                @include respond(phone) {   // MOBILE MEDIA QUERY
                     letter-spacing: .3rem;
                     margin-top: 0;
                     
@@ -206,7 +208,7 @@
             
             &__link {
 
-                    @include respond(phone){
+                    @include respond(phone){  // MOBILE MEDIA QUERY
                         width: 100%;
                         text-align: center;
                     } 
@@ -221,11 +223,11 @@
                         display: inline-block;
                     
         
-                        @include respond(tab-port) {    // MEDIA QUERY
+                        @include respond(tab-port) {    // TABLET PORTRAIT MEDIA QUERY
                              padding: 1.2rem 1.5rem;
                         }
 
-                        @include respond(phone) {
+                        @include respond(phone) {   // MOBILE MEDIA QUERY
                             
                             font-weight: 700;
                             font-size: 2rem;
@@ -261,7 +263,7 @@
                         letter-spacing: .2rem;
 
 
-                        @include respond(phone) {
+                        @include respond(phone) {  // MOBILE MEDIA QUERY
                             letter-spacing: .3rem;
                         }
 
@@ -271,7 +273,5 @@
             
             }   
 
-        }
-
-        
+        }        
 }
