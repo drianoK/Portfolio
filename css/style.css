@@ -145,9 +145,6 @@ body {
   .heading-secondary__white--title {
     color: #fff;
     text-shadow: none; }
-    @media (max-width: 75em) {
-      .heading-secondary__white--title {
-        margin-top: -6rem; } }
 
 .heading-tertiary {
   font-size: 2.7rem;
@@ -278,6 +275,9 @@ body {
       line-height: 2rem; }
       .wrapper__text:not(:last-child) {
         margin-bottom: 2rem; } }
+  @media (max-width: 37.5em) {
+    .wrapper__text {
+      line-height: 3rem; } }
 
 .wrapper__contact {
   margin-top: 5rem; }
@@ -298,6 +298,9 @@ body {
   @media (max-width: 56.25em) {
     .row {
       max-width: 60rem; } }
+  @media (max-width: 37.5em) {
+    .row {
+      max-width: 48rem; } }
   .row::after {
     content: "";
     display: table;
@@ -529,7 +532,7 @@ body {
   margin-top: -28rem; }
   @media (max-width: 75em) {
     .section-about {
-      padding: 35rem 0; } }
+      padding: 30rem 0; } }
 
 .section-projects {
   background-image: linear-gradient(to right, rgba(51, 51, 51, 0.75), rgba(51, 51, 51, 0.75)), url(../img/5184157.jpg);

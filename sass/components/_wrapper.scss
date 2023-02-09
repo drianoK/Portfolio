@@ -39,6 +39,11 @@
             }
     }
 
+    @include respond(phone) {
+        line-height: 3rem;
+        
+    }
+
 }
 
 }
