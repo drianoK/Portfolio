@@ -82,9 +82,10 @@ body {
         text-shadow: none;
 
 
-        // @include respond(tab-land) { // TABLET LANDSCAPE MEDIA QUERY
-        //     margin-top: -6rem;
-        //    }
+        @include respond(phone) {
+            margin-top: -4rem;
+            
+        }
     }
     
 }

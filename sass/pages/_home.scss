@@ -32,6 +32,10 @@
                     transform: skewY(14deg);
                 }
         }
+
+        @include respond(phone) {
+            padding: 20rem 0;
+        }
 }
 
 
