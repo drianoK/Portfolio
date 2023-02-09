@@ -108,6 +108,10 @@ body {
         font-size: 2rem;
         font-weight: 700;
         line-height: 2rem; } }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 2rem;
+        line-height: 7rem; } }
     .heading-primary--main__intro {
       color: #55c57a;
       box-shadow: 0 0.5rem 2rem rgba(17, 17, 17, 0.4);
@@ -124,6 +128,9 @@ body {
         font-size: 2rem;
         font-weight: 500;
         line-height: 2rem; } }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 1.7rem; } }
 
 .heading-secondary {
   font-size: 3rem;
