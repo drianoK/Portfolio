@@ -10,8 +10,8 @@
             display: none;
 
             @include respond(phone){ // MOBILE MEDIA QUERY
-                width: 8rem;
-                height: 8rem;
+                width: 7rem;
+                height: 7rem;
                 top: 3rem;
                 right: 3rem;
                 position: fixed;
@@ -30,8 +30,8 @@
                 background-color: $color-white;
                 --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-                height: 8rem;
-                width: 8rem;
+                height: 7rem;
+                width: 7rem;
                 position: fixed;
                 top: 3rem;
                 right: 3rem;
@@ -58,7 +58,7 @@
             &::after {
     
                 @include respond(phone) {  // MOBILE MEDIA QUERY
-                    width: 5rem;
+                    width: 4rem;
                     height: 2px;
                     background-color: $color-grey-dark-3;
                     display: inline-block;

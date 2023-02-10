@@ -111,7 +111,7 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 2rem;
-        line-height: 7rem; } }
+        line-height: 5rem; } }
     .heading-primary--main__intro {
       color: #55c57a;
       box-shadow: 0 0.5rem 2rem rgba(17, 17, 17, 0.4);
@@ -351,8 +351,8 @@ body {
     display: none; }
     @media (max-width: 37.5em) {
       .navigation__checkbox {
-        width: 8rem;
-        height: 8rem;
+        width: 7rem;
+        height: 7rem;
         top: 3rem;
         right: 3rem;
         position: fixed;
@@ -364,8 +364,8 @@ body {
       background-color: #fff;
       --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      height: 8rem;
-      width: 8rem;
+      height: 7rem;
+      width: 7rem;
       position: fixed;
       top: 3rem;
       right: 3rem;
@@ -378,7 +378,7 @@ body {
       left: 0; } }
   @media (max-width: 37.5em) {
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-      width: 5rem;
+      width: 4rem;
       height: 2px;
       background-color: #333;
       display: inline-block;
