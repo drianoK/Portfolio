@@ -45,7 +45,16 @@
         
     }
 
-}
+
+    &--contact {
+        @include respond(phone) { 
+           margin-top: -2rem;
+           font-size: 2rem;
+           color: inherit;
+        }
+    }
+
+    }
 
 }
 
