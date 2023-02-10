@@ -28,6 +28,14 @@
             font-weight: 500;
          }
 
+         @include respond(phone) { // PHONE MEDIA QUERY
+            font-size: 2rem;
+            line-height: 3.5rem;
+            
+         }
+
+         
+
     }
 
     &__img {
