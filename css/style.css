@@ -351,12 +351,12 @@ body {
     display: none; }
     @media (max-width: 37.5em) {
       .navigation__checkbox {
-        width: 7rem;
-        height: 7rem;
+        width: 6rem;
+        height: 6rem;
         top: 3rem;
         right: 3rem;
         position: fixed;
-        --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); } }
   @media (max-width: 37.5em) {
     .navigation__button {
@@ -364,12 +364,11 @@ body {
       background-color: #fff;
       --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      height: 7rem;
-      width: 7rem;
+      height: 6rem;
+      width: 6rem;
       position: fixed;
       top: 3rem;
       right: 3rem;
-      box-shadow: 0 2rem 3rem rgba(17, 17, 17, 0.7);
       z-index: 2000;
       cursor: pointer; } }
   @media (max-width: 37.5em) {
@@ -378,7 +377,7 @@ body {
       left: 0; } }
   @media (max-width: 37.5em) {
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-      width: 4rem;
+      width: 3.5rem;
       height: 2px;
       background-color: #333;
       display: inline-block;
