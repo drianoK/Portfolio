@@ -32,7 +32,7 @@
     }
 
     &__github--icon {
-        color: $color-grey-dark;
+        fill: $color-grey-dark;
         height: 3rem;
         width: 8rem;
 
@@ -44,10 +44,15 @@
         max-width: 50rem;
         height: 1px;
         background-color: $color-grey-dark;
-        
         border: none;
         
-    }
+       
+            @include respond(phone) {
+                width: 30rem;
+            }
+        }
+        
+    
 
     &__text {
         font-size: 1.6rem;

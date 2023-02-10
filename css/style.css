@@ -523,7 +523,7 @@ body {
   .footer__media-links a {
     text-decoration: none; }
   .footer__github--icon {
-    color: #777;
+    fill: #777;
     height: 3rem;
     width: 8rem; }
   .footer__line {
@@ -533,6 +533,9 @@ body {
     height: 1px;
     background-color: #777;
     border: none; }
+    @media (max-width: 37.5em) {
+      .footer__line {
+        width: 30rem; } }
   .footer__text {
     font-size: 1.6rem;
     font-weight: 700;
