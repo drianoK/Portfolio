@@ -243,7 +243,7 @@ body {
   @media (max-width: 37.5em) {
     .project__text {
       font-size: 2rem;
-      line-height: 3.5rem; } }
+      line-height: 3rem; } }
 
 .project__img {
   width: 100%;
@@ -288,7 +288,7 @@ body {
   @media (max-width: 37.5em) {
     .wrapper__text {
       font-size: 2rem;
-      line-height: 3.5rem; } }
+      line-height: 3rem; } }
   .wrapper__text--contact {
     font-size: 2rem; }
     @media (max-width: 37.5em) {
