@@ -286,11 +286,11 @@ body {
     .wrapper__text {
       font-size: 2rem;
       line-height: 3.5rem; } }
-  @media (max-width: 37.5em) {
-    .wrapper__text--contact {
-      margin-top: -2rem;
-      font-size: 2rem;
-      color: inherit; } }
+  .wrapper__text--contact {
+    font-size: 2rem; }
+    @media (max-width: 37.5em) {
+      .wrapper__text--contact {
+        margin-top: -2rem; } }
 
 .wrapper__contact {
   margin-top: 5rem; }

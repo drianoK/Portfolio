@@ -47,10 +47,11 @@
 
 
     &--contact {
+
+        font-size: 2rem;
+        
         @include respond(phone) { 
            margin-top: -2rem;
-           font-size: 2rem;
-           color: inherit;
         }
     }
 
