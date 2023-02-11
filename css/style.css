@@ -313,7 +313,7 @@ body {
       max-width: 60rem; } }
   @media (max-width: 37.5em) {
     .row {
-      max-width: 43rem; } }
+      max-width: 40rem; } }
   .row::after {
     content: "";
     display: table;
