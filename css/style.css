@@ -232,13 +232,13 @@ body {
 .project__text {
   font-family: inherit;
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
   color: #fff;
   margin-bottom: 2rem; }
   @media (max-width: 75em) {
     .project__text {
       font-size: 1.8rem;
-      line-height: 2rem;
+      line-height: 3rem;
       font-weight: 500; } }
   @media (max-width: 37.5em) {
     .project__text {
@@ -273,15 +273,18 @@ body {
 .wrapper__text {
   font-family: inherit;
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
   margin-bottom: 2rem; }
   @media (max-width: 75em) {
     .wrapper__text {
       font-size: 1.8rem;
       font-weight: 500;
-      line-height: 2rem; }
+      line-height: 3rem; }
       .wrapper__text:not(:last-child) {
         margin-bottom: 2rem; } }
+  @media (max-width: 56.25em) {
+    .wrapper__text {
+      line-height: 3.5rem; } }
   @media (max-width: 37.5em) {
     .wrapper__text {
       font-size: 2rem;
