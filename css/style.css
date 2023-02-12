@@ -405,6 +405,19 @@ body {
     .navigation__icon::after {
       top: 1.3rem; } }
   @media (max-width: 37.5em) {
+    .navigation__icon--hamburger {
+      background-color: transparent; }
+    .navigation__icon--hamburger::before {
+      opacity: 1;
+      top: 0;
+      left: 0;
+      transform: rotate(135deg); }
+    .navigation__icon--hamburger::after {
+      opacity: 1;
+      top: 0;
+      left: 0;
+      transform: rotate(-135deg); } }
+  @media (max-width: 37.5em) {
     .navigation__background {
       top: 0;
       height: 100vh;
