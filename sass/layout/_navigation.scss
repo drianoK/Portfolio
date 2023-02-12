@@ -2,10 +2,9 @@
 
             width: 100%;
             z-index: 900;
-            position: absolute;
-
+            position: absolute; 
+            margin-top: 3rem;
             
-
         &__button {
             display: none;
 
@@ -17,7 +16,7 @@
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
                 height: 6rem;
                 width: 6rem;
-                position: relative;
+                position: fixed;
                 top: 3rem;
                 right: 3rem;
                 margin-left: auto;
@@ -43,7 +42,7 @@
             &::after {
     
                 @include respond(phone) {  // MOBILE MEDIA QUERY
-                    width: 3rem;
+                    width: 3.5rem;
                     height: 2px;
                     background-color: $color-grey-dark-3;
                     display: inline-block;
@@ -76,7 +75,7 @@
         &__background {
 
             @include respond(phone) {   // MOBILE MEDIA QUERY
-                visibility: inherit;
+                top: 0;
                 height: 100vh;
                 width: 100%;
                 position: fixed;

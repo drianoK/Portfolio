@@ -360,7 +360,8 @@ body {
 .navigation {
   width: 100%;
   z-index: 900;
-  position: absolute; }
+  position: absolute;
+  margin-top: 3rem; }
   .navigation__button {
     display: none; }
     @media (max-width: 37.5em) {
@@ -372,7 +373,7 @@ body {
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
         height: 6rem;
         width: 6rem;
-        position: relative;
+        position: fixed;
         top: 3rem;
         right: 3rem;
         margin-left: auto;
@@ -385,7 +386,7 @@ body {
       top: 0; } }
   @media (max-width: 37.5em) {
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-      width: 3rem;
+      width: 3.5rem;
       height: 2px;
       background-color: #333;
       display: inline-block;
@@ -405,7 +406,7 @@ body {
       top: 1.3rem; } }
   @media (max-width: 37.5em) {
     .navigation__background {
-      visibility: inherit;
+      top: 0;
       height: 100vh;
       width: 100%;
       position: fixed;
