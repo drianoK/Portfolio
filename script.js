@@ -21,11 +21,8 @@ navBtn.addEventListener("click", () => {
 
 
 moveToSection.forEach(n => n.addEventListener("click", () => {
-       if(menuIsOpen) {
         navBackGround.classList.remove("menu-active");
         btnIcon.classList.remove("navigation__icon--hamburger");
-       }
-    
 }))
 
 
