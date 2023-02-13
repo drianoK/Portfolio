@@ -31,10 +31,16 @@
     
     }
 
-    &__github--icon {
+    &__icon {
         fill: $color-grey-dark;
         height: 3rem;
         width: 8rem;
+        transition: all .5s;
+
+        &:hover,
+        &:visited {
+            transform :translateY(-.2rem) scale(1.1);
+        }
 
     }
 

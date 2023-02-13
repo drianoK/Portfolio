@@ -521,10 +521,13 @@ body {
     transform: translateY(-0.2rem) scale(1.1); }
   .footer__media-links a {
     text-decoration: none; }
-  .footer__github--icon {
+  .footer__icon {
     fill: #777;
     height: 3rem;
-    width: 8rem; }
+    width: 8rem;
+    transition: all .5s; }
+    .footer__icon:hover, .footer__icon:visited {
+      transform: translateY(-0.2rem) scale(1.1); }
   .footer__line {
     margin: 0 auto;
     margin-bottom: 2rem;
