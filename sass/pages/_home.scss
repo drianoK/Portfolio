@@ -11,13 +11,14 @@
 }
 
 .section-projects {
-    background-image: linear-gradient(to right , rgba($color-grey-dark-3, .75), rgba($color-grey-dark-3, .75)), url(../img/5184157.jpg);
-    background-size: cover;
-    background-position: top;
+    background-image: linear-gradient(to right, rgba($color-grey-dark-3, .75), rgba($color-grey-dark-3, .75)), url(../img/5184157.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
     margin-top: -10rem;
     transform: skewY(-9deg);
     padding: 25rem 0;
+    
 
   
     @include respond(tab-land) {    // MEDIA QUERY
