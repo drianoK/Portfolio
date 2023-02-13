@@ -294,7 +294,10 @@ body {
     font-size: 2rem; }
     @media (max-width: 37.5em) {
       .wrapper__text--contact {
-        margin-top: -2rem; } }
+        margin-top: -2rem;
+        line-height: 3rem;
+        max-width: 70%;
+        margin: 0 auto; } }
 
 .wrapper__contact {
   margin-top: 5rem; }

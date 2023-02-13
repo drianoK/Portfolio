@@ -59,6 +59,9 @@
 
         @include respond(phone) { 
            margin-top: -2rem;
+           line-height: 3rem;
+           max-width: 70%;
+           margin: 0 auto;
         }
     }
 
