@@ -82,7 +82,7 @@ html {
       font-size: 43.75%; } }
   @media (min-width: 160em) {
     html {
-      font-size: 75%; } }
+      font-size: 68.75%; } }
 
 body {
   box-sizing: border-box; }
@@ -352,6 +352,10 @@ body {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%); } }
+  @media (min-width: 160em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 68vh, 0 100%); } }
   .header__text-box {
     width: 100%;
     top: 45%;

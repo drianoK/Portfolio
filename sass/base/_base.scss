@@ -23,8 +23,8 @@ html {
         font-size: 43.75%;
     }
  
-    @include respond(big-desktop) { // 1rem = 12px; 12px / 16px = 75%;  // BIG DESKTOP MEDIA QUERY
-        font-size: 75%;
+    @include respond(big-desktop) { // 1rem = 11px; 11px / 16px = 68.75%;  // BIG DESKTOP MEDIA QUERY
+        font-size: 68.75%;
     }
 
 }
