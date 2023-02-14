@@ -4,10 +4,17 @@
             z-index: 900;
             position: absolute; 
             margin-top: 3rem;
-            
+
+            @include respond(phone) {
+                -webkit-filter: drop-shadow(0 2px 4px $color-black);
+                filter: drop-shadow(0 2px 4px $color-black);
+                position: fixed;
+                
+            }
+        
         &__button {
             display: none;
-
+           
             @include respond(phone) {  // MOBILE MEDIA QUERY
                 display: block;
                 color: $color-black;
@@ -23,17 +30,23 @@
                 z-index: 2000;
                 cursor: pointer;
                 border: none;
-               
+
+            }
+
+            &:active {
+                --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             }
 
         }
 
 
         &__icon {
-            
+    
+
             @include respond(phone) {  // MOBILE MEDIA QUERY
                 position: absolute;
-                top: 0;
+                top: 0; 
             }
             
         
@@ -224,7 +237,7 @@
                         cursor: pointer;
                         color: $color-primary;
                         
-
+                        
                             @include respond(phone) {
                                 
                                 background-image: linear-gradient(to right, $color-white, $color-white);

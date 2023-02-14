@@ -369,6 +369,11 @@ body {
   z-index: 900;
   position: absolute;
   margin-top: 3rem; }
+  @media (max-width: 37.5em) {
+    .navigation {
+      -webkit-filter: drop-shadow(0 2px 4px #111);
+      filter: drop-shadow(0 2px 4px #111);
+      position: fixed; } }
   .navigation__button {
     display: none; }
     @media (max-width: 37.5em) {
@@ -387,6 +392,9 @@ body {
         z-index: 2000;
         cursor: pointer;
         border: none; } }
+    .navigation__button:active {
+      --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); }
   @media (max-width: 37.5em) {
     .navigation__icon {
       position: absolute;
