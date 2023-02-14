@@ -9,10 +9,10 @@
                 -webkit-filter: drop-shadow(0 2px 4px $color-black);
                 filter: drop-shadow(0 2px 4px $color-black);
                 position: fixed;
-                
             }
         
         &__button {
+
             display: none;
            
             @include respond(phone) {  // MOBILE MEDIA QUERY
@@ -34,7 +34,7 @@
             }
 
             &:active {
-                --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             }
 
@@ -85,8 +85,6 @@
 
         }
 
-
-
                 // BUTTON X ANIMATION 
 
             @include respond(phone){
@@ -109,11 +107,6 @@
                }
 
             }
-
-
-
-        
-
 
         &__background {
 
@@ -163,7 +156,6 @@
                 margin-left: 2rem;
                
                 
-
                 @include respond(tab-port) {    // TABLET PORTRAIT MEDIA QUERY
                     margin-left: 0;
                 }

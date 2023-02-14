@@ -393,7 +393,7 @@ body {
         cursor: pointer;
         border: none; } }
     .navigation__button:active {
-      --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); }
   @media (max-width: 37.5em) {
     .navigation__icon {
