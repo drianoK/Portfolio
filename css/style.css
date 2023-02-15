@@ -559,7 +559,6 @@ body {
     color: #777; }
 
 .section-about {
-  background-color: #f7f7f7;
   padding: 40rem 0;
   margin-top: -28rem; }
   @media (max-width: 75em) {
@@ -587,8 +586,7 @@ body {
       padding: 20rem 0; } }
 
 .section-contact {
-  padding: 30rem 0;
-  background-color: #f7f7f7; }
+  padding: 30rem 0; }
   @media (max-width: 75em) {
     .section-contact {
       padding: 20rem 0; } }
