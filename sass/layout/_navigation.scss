@@ -1,42 +1,47 @@
 .navigation {
 
             width: 100%;
-            z-index: 900;
+            z-index: 1;
             position: absolute; 
             margin-top: 3rem;
 
             @include respond(phone) {
+                margin-top: 0;
                 -webkit-filter: drop-shadow(0 2px 4px $color-black);
                 filter: drop-shadow(0 2px 4px $color-black);
                 position: fixed;
+               
             }
         
         &__button {
 
             display: none;
+
+            &,
+            &:active,
+            &:visited {
+                @include respond(phone) {  // MOBILE MEDIA QUERY
+                
+                    display: block;
+                    color: $color-black;
+                    background-color: $color-white;
+                    --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                    height: 6rem;
+                    width: 6rem;
+                    position: fixed;
+                    top: 3rem;
+                    right: 3rem;
+                    margin-left: auto;
+                    z-index: 2000;
+                    cursor: pointer;
+                    border: none;
+                }
+            }
            
-            @include respond(phone) {  // MOBILE MEDIA QUERY
-                display: block;
-                color: $color-black;
-                background-color: $color-white;
-                --webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-                height: 6rem;
-                width: 6rem;
-                position: fixed;
-                top: 3rem;
-                right: 3rem;
-                margin-left: auto;
-                z-index: 2000;
-                cursor: pointer;
-                border: none;
+           
 
-            }
-
-            &:active {
-                -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            }
+           
 
         }
 
