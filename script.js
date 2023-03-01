@@ -23,6 +23,7 @@ navBtn.addEventListener("click", () => {
 moveToSection.forEach(n => n.addEventListener("click", () => {
         navBackGround.classList.remove("menu-active");
         btnIcon.classList.remove("navigation__icon--hamburger");
+        menuIsOpen = false;
         }
     )
 );
